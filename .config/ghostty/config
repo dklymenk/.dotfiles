@@ -1,0 +1,10 @@
+# theme = dark:Tomorrow Night,light:Tomorrow
+theme = Tomorrow Night
+
+background-opacity = 0.95
+
+font-size = 16
+font-family = "Hack Nerd Font Mono"
+font-thicken = true
+font-thicken-strength = 255
+adjust-cell-width = -1
