@@ -1,12 +1,5 @@
 set -o ignoreeof
 
-export EDITOR="nvim"
-
-export PATH=/Users/dmytro.klymenkosyniti.com/.local/bin:$PATH
-export PATH=/Users/dmytro.klymenkosyniti.com/.yarn/bin:$PATH
-export PATH=/Users/dmytro.klymenkosyniti.com/.cargo/bin:$PATH
-export PATH="/Applications/dmenu-mac.app/Contents/Resources/:$PATH"
-
 eval "$(/opt/homebrew/bin/brew shellenv)"
 
 [[ -r "/opt/homebrew/etc/profile.d/bash_completion.sh" ]] && . "/opt/homebrew/etc/profile.d/bash_completion.sh"
@@ -15,6 +8,15 @@ if [ -f "/opt/homebrew/opt/bash-git-prompt/share/gitprompt.sh" ]; then
   __GIT_PROMPT_DIR="/opt/homebrew/opt/bash-git-prompt/share"
   source "/opt/homebrew/opt/bash-git-prompt/share/gitprompt.sh"
 fi
+
+export EDITOR="nvim"
+
+export PATH=/Users/dmytro.klymenkosyniti.com/.local/bin:$PATH
+export PATH=/Users/dmytro.klymenkosyniti.com/.yarn/bin:$PATH
+export PATH=/Users/dmytro.klymenkosyniti.com/.cargo/bin:$PATH
+export PATH="/Applications/dmenu-mac.app/Contents/Resources/:$PATH"
+export PATH=$PATH:/usr/local/go/bin
+export PATH=$PATH:$(go env GOPATH)/bin
 
 export GITHUB_TOKEN=$(gh auth token)
 
