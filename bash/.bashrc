@@ -26,3 +26,5 @@ export NVM_DIR="$HOME/.nvm"
 export FZF_ALT_C_COMMAND="fd -t d -d 4 . $HOME/dev"
 
 [[ -x "$HOME/Documents/scripts/employer_bashrc.sh" ]] && source "$HOME/Documents/scripts/employer_bashrc.sh"
+
+alias oc="sed -i '' 's/api\.githubcopilot\.com/api.business.githubcopilot.com/g' ~/.cache/opencode/models.json && OPENCODE_DISABLE_MODELS_FETCH=true opencode"
