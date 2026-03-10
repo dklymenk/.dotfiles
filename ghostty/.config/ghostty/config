@@ -8,3 +8,5 @@ font-family = "Hack Nerd Font Mono"
 font-thicken = true
 font-thicken-strength = 255
 adjust-cell-width = -1
+
+keybind = opt+c=text:\x1bc

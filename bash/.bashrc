@@ -24,7 +24,7 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
-[ -f ~/.fzf.bash ] && source ~/.fzf.bash
+command -v fzf >/dev/null 2>&1 && eval "$(fzf --bash)"
 export FZF_ALT_C_COMMAND="fd -t d -d 4 . $HOME/dev"
 
 [[ -x "$HOME/Documents/scripts/employer_bashrc.sh" ]] && source "$HOME/Documents/scripts/employer_bashrc.sh"
