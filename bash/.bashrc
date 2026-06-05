@@ -11,9 +11,9 @@ fi
 
 export EDITOR="nvim"
 
-export PATH=/Users/dmytro.klymenkosyniti.com/.local/bin:$PATH
-export PATH=/Users/dmytro.klymenkosyniti.com/.yarn/bin:$PATH
-export PATH=/Users/dmytro.klymenkosyniti.com/.cargo/bin:$PATH
+export PATH=$HOME/.local/bin:$PATH
+export PATH=$HOME/.yarn/bin:$PATH
+export PATH=$HOME/.cargo/bin:$PATH
 export PATH="/Applications/dmenu-mac.app/Contents/Resources/:$PATH"
 export PATH=$PATH:/usr/local/go/bin
 export PATH=$PATH:$(go env GOPATH)/bin
@@ -30,3 +30,5 @@ export FZF_ALT_C_COMMAND="fd -t d -d 4 . $HOME/dev"
 [[ -x "$HOME/Documents/scripts/employer_bashrc.sh" ]] && source "$HOME/Documents/scripts/employer_bashrc.sh"
 
 alias oc="sed -i '' 's/api\.githubcopilot\.com/api.business.githubcopilot.com/g' ~/.cache/opencode/models.json && OPENCODE_DISABLE_MODELS_FETCH=true opencode"
+
+export NODE_OPTIONS="--use-system-ca"
